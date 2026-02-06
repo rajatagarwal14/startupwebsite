@@ -44,29 +44,29 @@ const Navigation = () => {
               </button>
               <div className="absolute left-0 mt-2 w-72 bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 overflow-hidden">
                 <div className="p-2">
-                  <a href="/services/private-limited-company" className="block px-4 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+                  <a href="#services" className="block px-4 py-3 rounded-lg hover:bg-blue-50 transition-colors">
                     <div className="font-semibold text-gray-900 text-sm">Private Limited Company</div>
                     <div className="text-xs text-gray-500 mt-0.5">Structured governance</div>
                   </a>
-                  <a href="/services/gst-registration" className="block px-4 py-3 rounded-lg hover:bg-orange-50 transition-colors">
+                  <a href="#services" className="block px-4 py-3 rounded-lg hover:bg-orange-50 transition-colors">
                     <div className="font-semibold text-gray-900 text-sm">GST Registration</div>
                     <div className="text-xs text-gray-500 mt-0.5">Applicable by business type</div>
                   </a>
-                  <a href="/services/fssai-license" className="block px-4 py-3 rounded-lg hover:bg-red-50 transition-colors">
+                  <a href="#services" className="block px-4 py-3 rounded-lg hover:bg-red-50 transition-colors">
                     <div className="font-semibold text-gray-900 text-sm">FSSAI License</div>
                     <div className="text-xs text-gray-500 mt-0.5">Eligibility-based requirement</div>
                   </a>
-                  <a href="/services/trademark-registration" className="block px-4 py-3 rounded-lg hover:bg-green-50 transition-colors">
+                  <a href="#services" className="block px-4 py-3 rounded-lg hover:bg-green-50 transition-colors">
                     <div className="font-semibold text-gray-900 text-sm">Trademark Registration</div>
                     <div className="text-xs text-gray-500 mt-0.5">Brand protection</div>
                   </a>
-                  <a href="/services/msme-udyam-registration" className="block px-4 py-3 rounded-lg hover:bg-green-50 transition-colors">
+                  <a href="#services" className="block px-4 py-3 rounded-lg hover:bg-green-50 transition-colors">
                     <div className="font-semibold text-gray-900 text-sm">MSME/Udyam Registration</div>
                     <div className="text-xs text-gray-500 mt-0.5">Program eligibility support</div>
                   </a>
                 </div>
                 <div className="border-t border-gray-100 p-2">
-                  <a href="/#services" className="block px-4 py-3 text-center font-semibold text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">
+                  <a href="#services" className="block px-4 py-3 text-center font-semibold text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">
                     View All Services &rarr;
                   </a>
                 </div>
@@ -125,12 +125,12 @@ const Navigation = () => {
                 </button>
                 {servicesOpen && (
                   <div className="ml-4 space-y-1 mt-1">
-                    <a href="/services/private-limited-company" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">Private Limited Company</a>
-                    <a href="/services/gst-registration" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">GST Registration</a>
-                    <a href="/services/fssai-license" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">FSSAI License</a>
-                    <a href="/services/trademark-registration" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">Trademark Registration</a>
-                    <a href="/services/msme-udyam-registration" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">MSME/Udyam</a>
-                    <a href="/#services" className="block px-4 py-2 text-blue-600 font-semibold rounded-lg text-sm">View All &rarr;</a>
+                    <a href="#services" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">Private Limited Company</a>
+                    <a href="#services" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">GST Registration</a>
+                    <a href="#services" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">FSSAI License</a>
+                    <a href="#services" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">Trademark Registration</a>
+                    <a href="#services" className="block px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg text-sm">MSME/Udyam</a>
+                    <a href="#services" className="block px-4 py-2 text-blue-600 font-semibold rounded-lg text-sm">View All &rarr;</a>
                   </div>
                 )}
               </div>
@@ -149,3 +149,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
