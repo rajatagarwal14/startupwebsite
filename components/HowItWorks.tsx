@@ -11,14 +11,14 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-slate-900 overflow-hidden">
+    <section className="relative py-24 bg-slate-900 overflow-hidden" id="how-it-works">
       {/* Background gradient */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-        
+
         {/* Section header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6">
