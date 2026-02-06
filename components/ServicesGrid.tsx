@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 
 const ServiceIcon = ({ type }: { type: string }) => {
   const icons: Record<string, React.ReactNode> = {
@@ -55,15 +54,15 @@ const ServiceIcon = ({ type }: { type: string }) => {
 };
 
 const services = [
-  { title: 'Private Limited Company', description: 'Limited liability, easy funding, separate legal entity', iconType: 'building', urgency: 'important' as const, slug: 'private-limited-company' },
-  { title: 'GST Registration', description: 'Applicable for qualifying turnover thresholds', iconType: 'clipboard', urgency: 'critical' as const, slug: 'gst-registration' },
-  { title: 'Trademark Registration', description: 'Protect your brand identity and logo legally', iconType: 'shield', urgency: 'beneficial' as const, slug: 'trademark-registration' },
-  { title: 'MSME/Udyam Registration', description: 'Access programs and eligibility benefits', iconType: 'factory', urgency: 'beneficial' as const, slug: 'msme-registration' },
-  { title: 'Partnership Firm', description: 'Ideal for 2+ partners sharing profits and losses', iconType: 'users', urgency: 'important' as const, slug: 'partnership-firm' },
-  { title: 'LLP Registration', description: 'Limited liability with partnership flexibility', iconType: 'scale', urgency: 'important' as const, slug: 'llp-registration' },
-  { title: 'One Person Company', description: 'Single owner with limited liability protection', iconType: 'user', urgency: 'important' as const, slug: 'one-person-company' },
-  { title: 'Digital Signature (DSC)', description: 'Used for secure online filings and approvals', iconType: 'key', urgency: 'mandatory' as const, slug: 'digital-signature' },
-  { title: 'FSSAI License', description: 'Required for eligible food-related businesses', iconType: 'document', urgency: 'critical' as const, slug: 'fssai-license' }
+  { title: 'Private Limited Company', description: 'Limited liability, easy funding, separate legal entity', iconType: 'building', urgency: 'important' as const },
+  { title: 'GST Registration', description: 'Applicable for qualifying turnover thresholds', iconType: 'clipboard', urgency: 'critical' as const },
+  { title: 'Trademark Registration', description: 'Protect your brand identity and logo legally', iconType: 'shield', urgency: 'beneficial' as const },
+  { title: 'MSME/Udyam Registration', description: 'Access programs and eligibility benefits', iconType: 'factory', urgency: 'beneficial' as const },
+  { title: 'Partnership Firm', description: 'Ideal for 2+ partners sharing profits and losses', iconType: 'users', urgency: 'important' as const },
+  { title: 'LLP Registration', description: 'Limited liability with partnership flexibility', iconType: 'scale', urgency: 'important' as const },
+  { title: 'One Person Company', description: 'Single owner with limited liability protection', iconType: 'user', urgency: 'important' as const },
+  { title: 'Digital Signature (DSC)', description: 'Used for secure online filings and approvals', iconType: 'key', urgency: 'mandatory' as const },
+  { title: 'FSSAI License', description: 'Required for eligible food-related businesses', iconType: 'document', urgency: 'critical' as const }
 ];
 
 const urgencyConfig = {
@@ -97,7 +96,13 @@ const ServicesGrid = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Link href={`/services/${service.slug}`} key={index} className="group">
+            <a
+              href="https://wa.me/919876543210?text=I%27m%20interested%20in%20your%20service"
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+              className="group"
+            >
               <div className={`card-premium relative border-l-4 ${urgencyConfig[service.urgency].border} hover:scale-[1.03] transition-all duration-300 cursor-pointer h-full`}>
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 bg-gradient-to-br from-slate-50 to-slate-100 text-slate-700 group-hover:from-blue-50 group-hover:to-emerald-50 group-hover:text-blue-600 transition-all duration-300">
                   <ServiceIcon type={service.iconType} />
@@ -106,13 +111,13 @@ const ServicesGrid = () => {
                 <p className="text-gray-600 leading-relaxed mb-4">{service.description}</p>
 
                 <div className="inline-flex items-center text-blue-600 font-semibold text-sm gap-2 group-hover:gap-3 transition-all">
-                  Learn More
+                  Get Started
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
