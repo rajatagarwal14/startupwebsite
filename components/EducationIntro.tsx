@@ -13,7 +13,7 @@ const EducationIntro = () => {
           Many founders underestimate how early registration decisions shape compliance, funding, and risk.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8">
           <div className="card-premium text-center group">
             <div className="icon-wrapper mx-auto mb-6 bg-gradient-to-br from-red-50 to-red-100">
               <svg className="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,49 +48,6 @@ const EducationIntro = () => {
             <p className="text-gray-600 leading-relaxed">
               Compliance readiness supports access to programs, credit, and larger enterprise contracts.
             </p>
-          </div>
-        </div>
-
-        <div className="card-premium max-w-4xl mx-auto">
-          <h3 className="font-bold text-3xl mb-8 text-gray-900 text-center">
-            Your Registration <span className="gradient-text">Timeline</span>
-          </h3>
-          <div className="space-y-6">
-            <div className="flex items-start gap-6 p-6 bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl">
-              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg">
-                1
-              </div>
-              <div className="flex-1">
-                <h4 className="font-bold text-xl text-gray-900 mb-2">Before You Start</h4>
-                <p className="text-gray-700 leading-relaxed">
-                  Clarify entity type and requirements to avoid rework later.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-6 p-6 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-2xl">
-              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-600 to-orange-700 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg">
-                2
-              </div>
-              <div className="flex-1">
-                <h4 className="font-bold text-xl text-gray-900 mb-2">During Registration</h4>
-                <p className="text-gray-700 leading-relaxed">
-                  A guided checklist reduces errors and keeps filings on track.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-6 p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl">
-              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-600 to-green-700 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg">
-                3
-              </div>
-              <div className="flex-1">
-                <h4 className="font-bold text-xl text-gray-900 mb-2">After Registration</h4>
-                <p className="text-gray-700 leading-relaxed">
-                  A clear compliance roadmap helps you maintain good standing.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
